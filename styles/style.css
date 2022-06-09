@@ -51,7 +51,7 @@ nav li a{
     font-size: 100px;
     text-align: center;
     color: red;
-    margin-top: 330px;
+    margin-top: 300px;
 }
 .fondo{
     background: url(../img/fondo.desktop.jpeg) no-repeat fixed center center;
@@ -60,7 +60,7 @@ nav li a{
 
 
 /*TITULOS*/
-.titulosExtra{
+.titulosExtra, .titulosExtra2{
     font-family: 'Sarpanch', sans-serif;
     font-size: 50px;
     text-align: center;
@@ -123,8 +123,8 @@ nav li a{
     display: inline-flex;
     text-align: center;
     justify-content: space-around;
-    width: 300px;
-    height: 30px;
+    width: 400px;
+    height: 40px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -205,6 +205,7 @@ nav li a{
 }
 
 .parrafo{
+    display: block;
     align-content: center;
     text-align: center;
     justify-content: center;
@@ -229,12 +230,12 @@ nav li a{
 
 /*FOOTER*/
 .logo{
-    width: 30px;
+    width: 45px;
     height: 30px;
 }
 
 .footer2{
-    padding: 20px 20px;
+    padding: 10px 20px;
     display: flex;
     text-align: center;
     justify-content: space-evenly;
@@ -275,35 +276,40 @@ div .card{
     .fondoMobile{
         display: none;
     }
+    .navbar{
+        visibility: hidden;
+    }
 }
 
 @media screen and (min-width: 0px) and (max-width: 460px){
     body{
         background-color: black;
     }
-    header{
-        display: none;
-    }
+    
     footer{
         display: none;
     }
-
+    .navbar{
+        visibility: visible;
+    }
+    .nav-link{
+        font-size: x-large;
+        font-weight: bold;
+        color: red;
+    }
+    .menu{
+        display: none;
+    }
+    .navbar-toggler{
+        color: red;
+    }
     /*index*/
     #titulo{
-        display: flex;
+        display: block;
+        margin-top: 450px;
+        justify-content: center;
         text-align: center;
-        align-items: center;
-        font-size: 70px;
-    } 
-    
-    .titulosExtra{
-        display: flex;
-        text-align: center;
-        align-items: center;
-        font-size: 50px;
     }
-
-
     .fondo{
         width: 460px;
         height: 100%;
@@ -327,7 +333,7 @@ div .card{
     }
     #descarga .logo{
         height: 25px;
-        width: 25px;
+        width: 45px;
     }
     .tracks{
         display: none;
@@ -340,5 +346,50 @@ div .card{
     }
     .tracksMobile iframe{
         padding: 15px 0px;
+    }
+
+    .titulosExtra{
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        font-size: 40px;
+    }
+    .titulosExtra2{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        font-size: 30px;
+    }
+
+    .parrafo li{
+        font-size: medium;
+        display: block;
+        align-content: center;
+        justify-content: center;
+    }
+    .btn{
+        font-size: medium;
+    }
+    #merchForm{
+        font-size: medium;
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .buttonMerch{
+        font-size: medium;
+    }
+    .card{
+        width: 75%;
+    }
+    .col{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
