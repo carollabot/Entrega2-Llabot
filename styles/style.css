@@ -284,6 +284,7 @@ div .card{
 @media screen and (min-width: 0px) and (max-width: 460px){
     body{
         background-color: black;
+        overflow-x: hidden;
     }
     
     footer{
