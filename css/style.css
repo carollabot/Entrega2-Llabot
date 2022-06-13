@@ -139,11 +139,3 @@ main .container div .texto {
 * {
   padding: 0%;
   margin: 0%; }
-
-/*general*/
-.titulosExtra, .titulosExtra2 {
-  font-family: 'Sarpanch', sans-serif;
-  font-size: 50px;
-  text-align: center;
-  color: red;
-  margin-top: 15px; }
