@@ -15,6 +15,20 @@ header {
       color: red;
       font-weight: bold;
       font-family: 'Gaegu', cursive; }
+  @media screen and (min-width: 320px) and (max-width: 1440px) {
+    header .navbar {
+      visibility: hidden; } }
+  @media screen and (min-width: 0px) and (max-width: 460px) {
+    header .navbar {
+      visibility: visible; }
+    header .nav-link {
+      font-size: x-large;
+      font-weight: bold;
+      color: red; }
+    header .menu {
+      display: none; }
+    header .navbar-toggler {
+      color: red; } }
 
 .footer2 {
   padding: 10px 20px;
@@ -24,6 +38,9 @@ header {
   .footer2 .logo {
     width: 45px;
     height: 30px; }
+  @media screen and (min-width: 0px) and (max-width: 460px) {
+    .footer2 {
+      display: none; } }
 
 .fondo {
   background: url(../img/fondo.desktop.jpeg) no-repeat fixed center center;
@@ -34,13 +51,33 @@ header {
     text-align: center;
     color: red;
     margin-top: 300px; }
+    @media screen and (min-width: 0px) and (max-width: 460px) {
+      .fondo main #titulo {
+        display: block;
+        margin-top: 450px;
+        justify-content: center;
+        text-align: center; } }
+  @media screen and (min-width: 320px) and (max-width: 1440px) {
+    .fondo .fondoMobile {
+      display: none; } }
+  @media screen and (min-width: 0px) and (max-width: 460px) {
+    .fondo {
+      width: 460px;
+      height: 100%; } }
 
 .mainConteiner #video {
   padding: 15px 0px;
   text-align: center; }
+  @media screen and (min-width: 0px) and (max-width: 460px) {
+    .mainConteiner #video iframe {
+      width: 460px;
+      height: 200px; } }
 
 .mainConteiner #descarga {
   text-align: center; }
+  @media screen and (min-width: 0px) and (max-width: 460px) {
+    .mainConteiner #descarga {
+      width: 460px; } }
   .mainConteiner #descarga .logo {
     padding: 0px 10px;
     width: 35px;
@@ -48,6 +85,10 @@ header {
     text-decoration: none;
     list-style-type: none;
     font-size: x-large; }
+    @media screen and (min-width: 0px) and (max-width: 460px) {
+      .mainConteiner #descarga .logo {
+        height: 25px;
+        width: 45px; } }
 
 .mainConteiner .descargar {
   color: red;
@@ -56,11 +97,20 @@ header {
   font-size: xx-large;
   font-family: 'Sarpanch', sans-serif;
   text-align: center; }
+  @media screen and (min-width: 0px) and (max-width: 460px) {
+    .mainConteiner .descargar {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 460px; } }
 
 .mainConteiner .tracks {
   text-align: center;
   align-items: center;
   align-self: center; }
+  @media screen and (min-width: 0px) and (max-width: 460px) {
+    .mainConteiner .tracks {
+      display: none; } }
   .mainConteiner .tracks li {
     display: inline-flex;
     text-align: center;
@@ -74,6 +124,14 @@ header {
   text-align: center;
   align-items: center;
   align-self: center; }
+  @media screen and (min-width: 0px) and (max-width: 460px) {
+    .mainConteiner .tracksMobile {
+      display: inline-block;
+      align-items: center;
+      justify-content: center;
+      width: 460px; }
+    .mainConteiner .tracksMobile iframe {
+      padding: 15px 0px; } }
   .mainConteiner .tracksMobile li {
     display: inline-flex;
     text-align: center;
@@ -82,6 +140,9 @@ header {
     height: 30px;
     padding-left: 50px;
     padding-right: 50px; }
+  @media screen and (min-width: 320px) and (max-width: 1440px) {
+    .mainConteiner .tracksMobile {
+      display: none; } }
 
 main .carrusel {
   display: flex;
@@ -128,6 +189,30 @@ main .cardT .boton {
   align-content: center;
   justify-content: center; }
 
+@media screen and (min-width: 0px) and (max-width: 460px) {
+  .parrafo li {
+    font-size: medium;
+    display: block;
+    align-content: center;
+    justify-content: center; }
+  .btn {
+    font-size: medium; }
+  #merchForm {
+    font-size: medium;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
+  .buttonMerch {
+    font-size: medium; }
+  .card {
+    width: 75%; }
+  .col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; } }
+
 main .container div .texto {
   color: red;
   font-weight: bold;
@@ -136,6 +221,99 @@ main .container div .texto {
   font-size: x-large;
   text-align: center; }
 
+.titulosExtra, .titulosExtra2 {
+  font-family: 'Sarpanch', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: red;
+  margin-top: 15px; }
+
+/*RESPONSIVE*/
+@media screen and (min-width: 320px) and (max-width: 1440px) {
+  .tracksMobile {
+    display: none; }
+  .fondoMobile {
+    display: none; }
+  .navbar {
+    visibility: hidden; } }
+
+@media screen and (min-width: 0px) and (max-width: 460px) {
+  body {
+    background-color: black; }
+  * {
+    overflow-x: hidden; }
+  footer {
+    display: none; }
+  .navbar {
+    visibility: visible; }
+  .nav-link {
+    font-size: x-large;
+    font-weight: bold;
+    color: red; }
+  .menu {
+    display: none; }
+  .navbar-toggler {
+    color: red; }
+  .titulosExtra {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px; }
+  .titulosExtra2 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px; }
+  .parrafo li {
+    font-size: medium;
+    display: block;
+    align-content: center;
+    justify-content: center; }
+  .btn {
+    font-size: medium; }
+  #merchForm {
+    font-size: medium;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
+  .buttonMerch {
+    font-size: medium; }
+  .card {
+    width: 75%; }
+  .col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; } }
+
+div .card {
+  transition-property: box-shadow, transform;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.24); }
+  div .card:is(:hover, :focus) {
+    box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px); }
+
+.btn {
+  transition-timing-function: ease-in-out; }
+  .btn:is(:hover, :focus) {
+    width: 50%; }
+
+.logo:is(:hover, :focus) {
+  animation: pulse;
+  animation-duration: 2s; }
+
 * {
   padding: 0%;
   margin: 0%; }
+  @media screen and (min-width: 0px) and (max-width: 460px) {
+    * {
+      overflow-x: hidden; } }
+
+@media screen and (min-width: 0px) and (max-width: 460px) {
+  body {
+    background-color: black; } }
