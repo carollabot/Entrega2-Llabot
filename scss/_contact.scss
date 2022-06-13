@@ -1,13 +1,14 @@
 main{
     .container{
         div{
-        } .texto{
+         .texto{
             color: red; 
             font-weight: bold;
             font-family: 'Gaegu', cursive;
             display: inline-block;
             font-size: x-large;
             text-align: center;
+            }
         }
     }
 }
