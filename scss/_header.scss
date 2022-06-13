@@ -1,0 +1,23 @@
+header{
+    padding: 15px 50px 0px 50px;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    nav{
+        a{
+            text-decoration: none;
+            list-style-type: none;
+            font-size: x-large;
+        }
+        li{
+            display: inline-block;
+            text-align: center;
+            width: 15%;
+            a{
+                color: red; 
+                font-weight: bold;
+                font-family: 'Gaegu', cursive;
+            }
+        }
+    }
+}
